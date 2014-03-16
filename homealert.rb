@@ -33,8 +33,8 @@ class Pi_mailer < ActionMailer::Base
       :transfer_encoding => :binary
     }
     mail(
-         to: 'osamu.mb@gmail.com',
-         from: 'os.homealert@gmail.com',
+         to: 'to_mail_address',
+         from: 'from_mail_address',
          subject: 'infro from Raspberry Pi',
          body: body.to_s
          )
